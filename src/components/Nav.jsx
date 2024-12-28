@@ -12,7 +12,7 @@ const Nav = () => {
     };
 
     return (
-        <header className='padding-x py-8 absolute z-10 w-full'>
+        <header className='padding-x py-8 absolute z-50 w-full'>
             <nav className='flex justify-between items-center max-container'>
                 {/* Logo */}
                 <a href='/'>
@@ -48,7 +48,7 @@ const Nav = () => {
 
             {/* Sidebar for Mobile */}
             {isSidebarOpen && (
-                <div className='fixed inset-0 bg-black bg-opacity-80 z-20 flex flex-col items-center justify-center gap-8'>
+                <div className='fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center gap-8'>
                     {/* Close Icon */}
                     <div className='absolute top-4 right-4 cursor-pointer text-white' onClick={toggleSidebar}>
                         <AiOutlineClose size={30} />
